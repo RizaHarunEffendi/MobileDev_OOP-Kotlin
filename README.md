@@ -1,4 +1,4 @@
-# MobileDev_OOP-Kotlin
+# MobileDev_OOP_Kotlin
 Tugas Online 1 Pendalaman OOP Kotlin
 <br>
 Nama  : Riza Harun Effendi<br>
