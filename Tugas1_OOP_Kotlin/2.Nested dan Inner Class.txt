@@ -1,0 +1,36 @@
+// video ke 2
+// Nested Class
+class Outer{
+    val b = "Di Luar Nested Class."
+    class Nested {
+        val b = "Di dalam Nested Class."
+        fun callMe() = "Function akan dipanggil di dalam Nested Class."
+    }
+}
+
+fun main(args: Array<String>){
+   // Pengaksessan anggota dari Nested Class
+	println(Outer.Nested().b)
+    
+  //  Pembuatan Object dari Nested Class
+	val nested = Outer.Nested()
+    	println(nested.callMe())
+}
+----------------------------------------------------------------------
+// Inner Class
+class Outer {
+    
+    val a = "Di Luar dari Nested Class."
+    
+    inner class Inner{
+        fun callMe() = a
+    }
+}
+
+fun main(args: Array<String>){
+    val outer = Outer()
+    println("Menggunakan objek outer: ${outer.Inner().callMe()}")
+    
+    val inner = Outer().Inner()
+    println("Menggunakan objek inner: ${inner.callMe()}")
+}
